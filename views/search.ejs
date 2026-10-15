@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search Results</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Book Search Results</h1>
+
+    <% if (books.length===0) { %>
+        <p>No books found. Try another title.</p>
+        <% } else { %>
+            <% books.forEach((book)=> { %>
+                <div class="book-card">
+                    <h2>
+                        <%= book.title %>
+                    </h2>
+
+                    <p>
+                        Author:
+                        <%= book.author_name ? book.author_name.join(", ") : " Unknown" %>
+                    </p>
+
+                    <p>
+                        First Published:
+                        <%= book.first_publish_year || "Unknown" %>
+                    </p>
+
+                    <% if (book.cover_i) { %>
+                        <img src="https://covers.openlibrary.org/b/id/<%= book.cover_i %>-M.jpg"
+                            alt="Cover of <%= book.title %>" width="120">
+                        <% } %>
+                </div>
+
+                <hr>
+                <% }); %>
+                    <% } %>
+
+                        <p><a href="/">Back to My Books</a></p>
+</body>
+
+</html>

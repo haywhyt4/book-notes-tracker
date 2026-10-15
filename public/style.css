@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+h1 {
+    color: #243b53;
+}
+
+h2 {
+    color: #334e68;
+}
+
+form {
+    margin-bottom: 25px;
+}
+
+input,
+textarea,
+select,
+button {
+    padding: 10px;
+    margin-top: 5px;
+    font-family: inherit;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+img {
+    display: block;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.book-card {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.book-card h3 {
+    margin-top: 0;
+}
+
+.book-card a {
+    color: #2563eb;
+    text-decoration: none;
+    margin-right: 12px;
+}
+
+.book-card a:hover {
+    text-decoration: underline;
+}
+
+.book-card form {
+    margin-top: 15px;
+}
